@@ -124,8 +124,9 @@ namespace Microsoft.Azure.Commands.Common.Authentication.Models
                         { AzureEnvironment.Endpoint.TrafficManagerDnsSuffix, AzureEnvironmentConstants.ChinaTrafficManagerDnsSuffix },
                         { AzureEnvironment.Endpoint.AzureKeyVaultDnsSuffix, AzureEnvironmentConstants.ChinaKeyVaultDnsSuffix },
                         { AzureEnvironment.Endpoint.AzureKeyVaultServiceEndpointResourceId, AzureEnvironmentConstants.ChinaKeyVaultServiceEndpointResourceId },
-                         { AzureEnvironment.Endpoint.GraphEndpointResourceId, AzureEnvironmentConstants.ChinaGraphEndpoint}
-                       // TODO: DataLakeAnalytics and ADL do not have a China endpoint yet. Once they do, add them here.
+                        { AzureEnvironment.Endpoint.AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix, null},
+                        { AzureEnvironment.Endpoint.AzureDataLakeStoreFileSystemEndpointSuffix, null},
+                        { AzureEnvironment.Endpoint.GraphEndpointResourceId, AzureEnvironmentConstants.ChinaGraphEndpoint}
                     }
                 }
             },
@@ -175,6 +176,8 @@ namespace Microsoft.Azure.Commands.Common.Authentication.Models
                         { AzureEnvironment.Endpoint.TrafficManagerDnsSuffix, AzureEnvironmentConstants.GermanTrafficManagerDnsSuffix },
                         { AzureEnvironment.Endpoint.AzureKeyVaultDnsSuffix, AzureEnvironmentConstants.GermanKeyVaultDnsSuffix },
                         { AzureEnvironment.Endpoint.AzureKeyVaultServiceEndpointResourceId, AzureEnvironmentConstants.GermanAzureKeyVaultServiceEndpointResourceId },
+                        { AzureEnvironment.Endpoint.AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix, null},
+                        { AzureEnvironment.Endpoint.AzureDataLakeStoreFileSystemEndpointSuffix, null},
                         { AzureEnvironment.Endpoint.GraphEndpointResourceId, AzureEnvironmentConstants.GermanGraphEndpoint }
                     }
                 }
@@ -406,7 +409,7 @@ namespace Microsoft.Azure.Commands.Common.Authentication.Models
 
         public const string AzureActiveDirectoryEndpoint = "https://login.microsoftonline.com/";
         public const string ChinaActiveDirectoryEndpoint = "https://login.chinacloudapi.cn/";
-        public const string USGovernmentActiveDirectoryEndpoint = "https://login-us.microsoftonline.com/";
+        public const string USGovernmentActiveDirectoryEndpoint = "https://login.microsoftonline.us/";
         public const string GermanActiveDirectoryEndpoint = "https://login.microsoftonline.de/";
 
         public const string AzureGraphEndpoint = "https://graph.windows.net/";
